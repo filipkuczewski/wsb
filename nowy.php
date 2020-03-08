@@ -43,9 +43,61 @@ if ($x===$y){
 
     //Operatory rzutowania daych
     $text="123ssd";
-    $x = int $text;
+   // $x = int $text;
     echo $x;
     echo gettype($text);    //string
     echo gettype($x);   //integer
+   
+    $text="123ssd";
+   // $x = int $text;
+
+    echo "<hr><br>";
+    echo $x;
+    echo gettype($text);    //string
+    echo gettype($x);   //integer
+
+    echo PHP_INT_SIZE, "<br>"; //8
+    echo PHP_INT_MIN, "<br>"; //8
+    echo PHP_INT_MAX, "<br>"; //dua
+
+
+    $x='10';
+    echo is_int($x);
+    echo is_string($x);
+    echo is_float($x);
+    echo is_null($x);
+
+    echo "cos nowego";
+
+    echo "<hr><br>";
+
+
+    echo $_SERVER['SERVER_PORT'], "<br>"; //80
+    echo $_SERVER['SERVER_NAME'], "<br>"; //80
+    echo $_SERVER['SCRIPT_NAME'], "<br>"; //80
+    echo $_SERVER['DOCUMENT_ROOT'], "<br>"; //80
+
+    $fileLocal = $_SERVER['DOCUMENT_ROOT'];
+    $fileLocal .= $_SERVER['SCRIPT_NAME'];
+
+    echo $fileLocal, "<hr>";
+
+    //Stałe - nazwy stalych z duzych liter
+
+    define ("NAME", "Janusz");
+    echo NAME;
+    
+    define ("surnamE", "Nowak", true);
+    echo surname,"<br>";
+
+    //Stałe predefiniowane
+
+    echo "<hr><br>";
+    echo PHP_VERSION, "<br>";
+
+    echo PHP_OS;
+    echo __LINE__;
+    echo "<hr><br>";
+
 
  ?>
