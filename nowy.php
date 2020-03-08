@@ -40,4 +40,12 @@ if ($x===$y){
         echo "NieIdentyczne";
     }
 
+
+    //Operatory rzutowania daych
+    $text="123ssd";
+    $x = int $text;
+    echo $x;
+    echo gettype($text);    //string
+    echo gettype($x);   //integer
+
  ?>
